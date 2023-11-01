@@ -48,7 +48,7 @@ for (const academyMember of academyMembers) {
 //Which Academy Members have been in a film that starts with "A"?
 for (const academyMember of academyMembers) {
    for (const film of academyMember.films) {
-      if (film.charAt(0) === "A") {
+      if (film.startsWith("A")) {
          console.log("Academy Member in a film starting with 'A': " + academyMember.name);
          break;
       }
