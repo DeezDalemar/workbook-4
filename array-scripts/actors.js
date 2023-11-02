@@ -27,7 +27,7 @@ let academyMembers = [
 for (const academyMember of academyMembers) {
    if (academyMember.memID === 187) {
       console.log("Academy Member with ID 187: " + academyMember.name);
-      break; 
+      break;
    }
 }
 
@@ -40,7 +40,7 @@ for (const academyMember of academyMembers) {
 
 // Who has a name that starts with "Bob"?
 for (const academyMember of academyMembers) {
-   if (academyMember.name.indexOf("Bob") === 0) {
+   if (academyMember.name.slice(0, 3) === "Bob") {
       console.log("Academy Member with a name starting with 'Bob': " + academyMember.name);
    }
 }
